@@ -17,7 +17,7 @@ Shell Page (generator)
 
 (def configs {:title "A title"
               :icon "http://icon-url.png"
-              :ssr? false
+              :ssr "respo-ssr"
               :styles ["main.css"]
               :scripts ["main.js"]
               :inline-html ""})
