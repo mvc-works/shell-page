@@ -1,0 +1,17 @@
+{
+  "name": "shell-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mvc-works/shell-page.git",
+  "author": "jiyinyiyong <jiyinyiyong@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "compile": "shadow-cljs compile render",
+    "watch": "shadow-cljs watch render",
+    "serve": "http-server target"
+  },
+  "devDependencies": {
+    "http-server": "^0.10.0",
+    "shadow-cljs": "^0.12.0"
+  }
+}
