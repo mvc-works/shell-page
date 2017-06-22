@@ -22,7 +22,7 @@ Shell Page (generator)
               :scripts ["main.js"]
               :inline-html ""})
 
-(make-page app-html configs) ; returns string of html
+(shell-page.core/make-page app-html configs) ; returns string of html
 ```
 
 ### License
