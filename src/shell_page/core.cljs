@@ -13,7 +13,7 @@
     {}
     (head
      {}
-     (<> title "Shell page" nil)
+     (<> title (:title resources) nil)
      (link {:rel "icon", :type "image/png", :href (:icon resources)})
      (link {:rel "manifest", :href "manifest.json"})
      (meta' {:charset "utf8"})

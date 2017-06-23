@@ -20,7 +20,7 @@
                                        ["{}"]
                                        ["head"
                                         ["{}"]
-                                        ["<>" "title" "|Shell page" "nil"]
+                                        ["<>" "title" [":title" "resources"] "nil"]
                                         ["link"
                                          ["{}" [":rel" "|icon"] [":type" "|image/png"] [":href" [":icon" "resources"]]]]
                                         ["link" ["{}" [":rel" "|manifest"] [":href" "|manifest.json"]]]
@@ -77,7 +77,7 @@
                                   ["make-page"
                                    "|"
                                    ["{}"
-                                    [":title" "|Shell page"]
+                                    [":title" "|Shell Page Demo"]
                                     [":icon" "|http://logo.mvc-works.org/mvc.png"]
                                     [":ssr" "|respo-ssr"]
                                     [":styles" ["[]" "|/main.css"]]

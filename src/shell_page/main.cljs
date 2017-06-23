@@ -6,7 +6,7 @@
    "target/index.html"
    (make-page
     ""
-    {:title "Shell page",
+    {:title "Shell Page Demo",
      :icon "http://logo.mvc-works.org/mvc.png",
      :ssr "respo-ssr",
      :styles ["/main.css"],

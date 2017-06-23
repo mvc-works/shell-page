@@ -1,6 +1,6 @@
 {
   "name": "shell-page",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "main": "index.js",
   "repository": "git@github.com:mvc-works/shell-page.git",
   "author": "jiyinyiyong <jiyinyiyong@gmail.com>",
@@ -8,7 +8,8 @@
   "scripts": {
     "compile": "shadow-cljs compile render",
     "watch": "shadow-cljs watch render",
-    "serve": "http-server target"
+    "serve": "http-server target",
+    "html": "yarn compile && node target/main.js"
   },
   "devDependencies": {
     "http-server": "^0.10.0",
