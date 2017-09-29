@@ -20,7 +20,8 @@ Shell Page (generator)
               :ssr "respo-ssr"
               :styles ["main.css"]
               :scripts ["main.js"]
-              :inline-html ""})
+              :inline-html ""
+              :append-html ""})
 
 (shell-page.core/make-page app-html configs) ; returns string of html
 ```
