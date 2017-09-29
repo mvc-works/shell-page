@@ -1,6 +1,6 @@
 
 {:source-paths ["src/"]
- :dependencies [[respo "0.5.2"]]
+ :dependencies [[respo "0.6.2"]]
  :builds {:render {:target :node-script
                    :output-to "target/main.js"
                    :main shell-page.main/main!

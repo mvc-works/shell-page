@@ -30,7 +30,8 @@
      (if (some? (:inline-html resources)) (div {:innerHTML (:inline-html resources)}))
      (div
       {}
-      (->> (:scripts resources) (map-indexed (fn [idx path] [idx (script {:src path})]))))))))
+      (->> (:scripts resources) (map-indexed (fn [idx path] [idx (script {:src path})]))))
+     (if (some? (:append-html resources)) (div {:innerHTML (:append-html resources)}))))))
 
 (defn slurp [x] (println "Reading from" x) (.readFileSync fs x "utf8"))
 

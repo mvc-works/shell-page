@@ -11,4 +11,5 @@
      :ssr "respo-ssr",
      :styles ["/main.css"],
      :scripts ["/main.js"],
-     :inline-html "<script>console.log('nothing')</script>"})))
+     :inline-html "<script>console.log('nothing')</script>",
+     :append-html "<script>console.log('appended');</script>"})))
