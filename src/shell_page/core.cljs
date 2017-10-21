@@ -2,13 +2,13 @@
 (ns shell-page.core
   (:require-macros (respo.macros :refer [html <> head title script style meta' div link body]))
   (:require [respo.core :refer [create-element]]
-            [respo.render.html :refer [make-html]]
+            [respo.render.html :refer [make-string]]
             ["fs" :as fs]))
 
 (defn make-page [html-content resources]
   (assert (string? html-content) "1st argument should be string")
   (assert (map? resources) "2nd argument should be hashmap")
-  (make-html
+  (make-string
    (html
     {}
     (head
