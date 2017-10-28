@@ -1,7 +1,6 @@
 
 (ns shell-page.core
-  (:require-macros (respo.macros :refer [html <> head title script style meta' div link body]))
-  (:require [respo.core :refer [create-element]]
+  (:require (respo.macros :refer [html <> head title script style meta' div link body list->])
             [respo.render.html :refer [make-string]]
             ["fs" :as fs]))
 
@@ -21,14 +20,16 @@
      (if (some? (:ssr resources)) (meta' {:class (:ssr resources)})))
     (body
      {}
-     (div
+     (list->
+      :div
       {}
       (->> (:styles resources)
            (map-indexed
             (fn [idx path] [idx (link {:rel "stylesheet", :type "text/css", :href path})]))))
      (div {:class-name "app", :innerHTML html-content})
      (if (some? (:inline-html resources)) (div {:innerHTML (:inline-html resources)}))
-     (div
+     (list->
+      :div
       {}
       (->> (:scripts resources) (map-indexed (fn [idx path] [idx (script {:src path})]))))
      (if (some? (:append-html resources)) (div {:innerHTML (:append-html resources)}))))))
