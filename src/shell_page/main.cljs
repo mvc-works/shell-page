@@ -10,6 +10,7 @@
      :icon "http://logo.mvc-works.org/mvc.png",
      :ssr "respo-ssr",
      :styles ["/main.css"],
+     :inline-styles [".app{color:#aaa;}"],
      :scripts ["/main.js"],
      :inline-html "<script>console.log('nothing')</script>",
      :append-html "<script>console.log('appended');</script>"})))
