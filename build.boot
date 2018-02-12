@@ -4,12 +4,12 @@
 
 (set-env!
   :resource-paths #{"src"}
-  :dependencies '[[respo "0.7.0-a1"]]
+  :dependencies '[]
   :repositories #(conj % ["clojars" {:url "https://clojars.org/repo/"
                                      :username "jiyinyiyong"
                                      :password (read-password "Clojars password: ")}]))
 
-(def +version+ "0.1.6")
+(def +version+ "0.1.7")
 
 (deftask deploy []
   (comp
