@@ -1,6 +1,6 @@
 
 {:source-paths ["src/"]
- :dependencies [[respo                "0.8.15"]
+ :dependencies [[respo                "0.8.20"]
                 [mvc-works/verbosely  "0.1.2"]]
  :builds {:render {:target :node-script
                    :output-to "target/main.js"

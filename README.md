@@ -9,7 +9,7 @@ Shell Page (generator)
 ### Usage
 
 ```edn
-[mvc-works/shell-page "0.1.7"]
+[mvc-works/shell-page "0.1.8"]
 ```
 
 ```clojure
@@ -22,7 +22,8 @@ Shell Page (generator)
               :inline-styles [".app{color: #ddd;}"]
               :scripts ["main.js"]
               :inline-html ""
-              :append-html ""})
+              :append-html ""
+              :viewport "width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"})
 
 (shell-page.core/make-page app-html configs) ; returns string of html
 ```
