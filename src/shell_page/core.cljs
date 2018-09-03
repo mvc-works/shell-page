@@ -18,7 +18,10 @@
      (link {:rel "icon", :type "image/png", :href (:icon resources)})
      (link {:rel "manifest", :href "manifest.json"})
      (meta' {:charset "utf8"})
-     (meta' {:name "viewport", :content "width=device-width, initial-scale=1"})
+     (meta'
+      {:name "viewport",
+       :content (or (:viewport resources)
+                    "width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no")})
      (if (some? (:ssr resources)) (meta' {:class (:ssr resources)})))
     (body
      {}
