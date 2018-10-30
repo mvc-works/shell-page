@@ -1,0 +1,9 @@
+
+{:pom {:group-id "mvc-works",
+       :artifact-id "shell-page",
+       :version "0.1.9",
+       :name "Genetate index.html with Respo"}
+ :packaging {:jar {:enabled true
+                   :remote-repository {:id "clojars"
+                                       :url "https://clojars.org/repo"}}}
+ :scm {:enabled true}}

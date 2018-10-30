@@ -1,6 +1,6 @@
 
 (ns shell-page.core
-  (:require (respo.macros
+  (:require (respo.core
              :refer
              [html <> head title script style meta' div link body style list->])
             [respo.render.html :refer [make-string]]
