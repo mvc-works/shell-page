@@ -186,25 +186,49 @@
               }
              }
              "x" {
-              :type :expr, :id "H1sEoz6khsb", :by nil, :at 1506700563333
+              :type :expr, :by "root", :at 1544701113892, :id "oduGBDgq0j"
               :data {
-               "T" {:type :leaf, :id "rk3EjfT1hob", :text "link", :by "root", :at 1506700563333}
-               "j" {
-                :type :expr, :id "rkTEjMakhs-", :by nil, :at 1506700563333
+               "D" {:type :leaf, :by "root", :at 1544701145045, :text "when-let", :id "Gv7h5ELVd7"}
+               "L" {
+                :type :expr, :by "root", :at 1544701117127, :id "CWbExWZt4q"
                 :data {
-                 "T" {:type :leaf, :id "ByRNiGa1no-", :text "{}", :by "root", :at 1506700563333}
-                 "j" {
-                  :type :expr, :id "HyyrizTJnoW", :by nil, :at 1506700563333
+                 "T" {
+                  :type :expr, :by "root", :at 1544701117274, :id "VUVMEbk2AQ"
                   :data {
-                   "T" {:type :leaf, :id "B1lBsM6khjW", :text ":rel", :by "root", :at 1506700563333}
-                   "j" {:type :leaf, :id "SJ-HoG612jb", :text "\"manifest", :by "UI0sFmATo", :at 1535562361155}
+                   "T" {:type :leaf, :by "root", :at 1544701275438, :text "manifest", :id "N2gpZ0aR29"}
+                   "j" {
+                    :type :expr, :by "root", :at 1544701158300, :id "zuMWsDUmv0"
+                    :data {
+                     "T" {:type :leaf, :by "root", :at 1544701272337, :text ":manifest", :id "l2ahw7x35U"}
+                     "j" {:type :leaf, :by "root", :at 1544701158300, :text "resources", :id "aBdrScrKUX"}
+                    }
+                   }
                   }
                  }
-                 "r" {
-                  :type :expr, :id "ryfSofTk3oW", :by nil, :at 1506700563333
+                }
+               }
+               "T" {
+                :type :expr, :id "H1sEoz6khsb", :by nil, :at 1506700563333
+                :data {
+                 "T" {:type :leaf, :id "rk3EjfT1hob", :text "link", :by "root", :at 1506700563333}
+                 "j" {
+                  :type :expr, :id "rkTEjMakhs-", :by nil, :at 1506700563333
                   :data {
-                   "T" {:type :leaf, :id "Sk7HiG613jb", :text ":href", :by "root", :at 1506700563333}
-                   "j" {:type :leaf, :id "Sy4HjMa1nob", :text "\"manifest.json", :by "UI0sFmATo", :at 1535562362777}
+                   "T" {:type :leaf, :id "ByRNiGa1no-", :text "{}", :by "root", :at 1506700563333}
+                   "j" {
+                    :type :expr, :id "HyyrizTJnoW", :by nil, :at 1506700563333
+                    :data {
+                     "T" {:type :leaf, :id "B1lBsM6khjW", :text ":rel", :by "root", :at 1506700563333}
+                     "j" {:type :leaf, :id "SJ-HoG612jb", :text "\"manifest", :by "UI0sFmATo", :at 1535562361155}
+                    }
+                   }
+                   "r" {
+                    :type :expr, :id "ryfSofTk3oW", :by nil, :at 1506700563333
+                    :data {
+                     "T" {:type :leaf, :id "Sk7HiG613jb", :text ":href", :by "root", :at 1506700563333}
+                     "j" {:type :leaf, :id "Sy4HjMa1nob", :text "manifest", :by "root", :at 1544701277477}
+                    }
+                   }
                   }
                  }
                 }
@@ -868,6 +892,13 @@
               :data {
                "T" {:type :leaf, :text ":append-html", :id "Bk0LayhoZleaf", :by "root", :at 1506700633853}
                "j" {:type :leaf, :text "|<script>console.log('appended');</script>", :id "SkmP6k2o-", :by "root", :at 1506700648281}
+              }
+             }
+             "yr" {
+              :type :expr, :by "root", :at 1544701226299, :id "uiRz4NOsUT"
+              :data {
+               "T" {:type :leaf, :by "root", :at 1544701266640, :text ":manifest", :id "uiRz4NOsUTleaf"}
+               "j" {:type :leaf, :by "root", :at 1544701235675, :text "\"manifest.json", :id "m7kn9-QdjD"}
               }
              }
             }

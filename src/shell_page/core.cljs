@@ -16,7 +16,7 @@
      {}
      (<> title (:title resources) nil)
      (link {:rel "icon", :type "image/png", :href (:icon resources)})
-     (link {:rel "manifest", :href "manifest.json"})
+     (when-let [manifest (:manifest resources)] (link {:rel "manifest", :href manifest}))
      (meta' {:charset "utf8"})
      (meta'
       {:name "viewport",

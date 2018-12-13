@@ -23,6 +23,7 @@ Shell Page (generator)
               :scripts ["main.js"]
               :inline-html ""
               :append-html ""
+              :app-manifest "manifest.json"
               :viewport "width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"})
 
 (shell-page.core/make-page app-html configs) ; returns string of html
