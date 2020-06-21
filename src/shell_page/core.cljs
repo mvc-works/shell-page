@@ -6,7 +6,8 @@
             [respo.render.html :refer [make-string]]
             ["fs" :as fs]))
 
-(defn get-indexed [xs] (->> xs (map-indexed (fn [idx x] [idx x]))))
+(defn get-indexed [xs]
+  (->> xs (map-indexed (fn [idx x] [idx x])) (filter (fn [[idx x]] (some? x)))))
 
 (defn make-page [html-content resources]
   (assert (string? html-content) "1st argument should be string")
@@ -36,7 +37,8 @@
              (fn [path]
                (cond
                  (string? path) (script {:src path})
-                 (and (map? path) (= :module (:type path))) (script {:src (:src path)})
+                 (and (map? path) (= :module (:type path)))
+                   (script {:type "module", :src (:src path)})
                  (and (map? path) (= :script (:type path))) (script {:src (:src path)})
                  :else (println "[Shell Page]: unknown path" path))))))))
     (body
