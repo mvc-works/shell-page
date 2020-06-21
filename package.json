@@ -1,6 +1,6 @@
 {
   "name": "shell-page",
-  "version": "0.0.0",
+  "version": "0.1.11",
   "main": "index.js",
   "repository": "git@github.com:mvc-works/shell-page.git",
   "author": "jiyinyiyong <jiyinyiyong@gmail.com>",
