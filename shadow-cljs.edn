@@ -1,7 +1,13 @@
-
-{:source-paths ["src/"]
- :dependencies [[respo "0.10.12"]]
- :builds {:render {:target :node-script
-                   :output-to "target/main.js"
-                   :main shell-page.main/main!
-                   :devtools {:after-load shell-page.main/main!}}}}
+{
+  :source-paths ["src/"]
+  :dependencies [
+    [respo "0.12.2"]
+  ]
+  :dev-http {7000 "target/"}
+  :builds {
+    :render {
+      :target :node-script, :output-to "target/main.js", :main shell-page.main/main!
+      :devtools {:after-load shell-page.main/main!}
+    }
+  }
+}
