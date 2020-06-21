@@ -9,7 +9,7 @@ Shell Page (generator)
 ### Usage
 
 ```edn
-[mvc-works/shell-page "0.1.9"]
+[mvc-works/shell-page "0.1.11-a1"]
 ```
 
 ```clojure
@@ -20,7 +20,7 @@ Shell Page (generator)
               :ssr "respo-ssr"
               :styles ["main.css"]
               :inline-styles [".app{color: #ddd;}"]
-              :scripts ["main.js"]
+              :scripts ["main.js" {:type :module, :src "main.mjs"}]
               :inline-html ""
               :append-html ""
               :manifest "manifest.json"

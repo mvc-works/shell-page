@@ -1,0 +1,6 @@
+{:version "0.1.11-a1"
+ :group-id "mvc-works"
+ :artifact-id "shell-page"
+ :skip-tag true
+ :description "Genetate index.html with Respo"
+ :scm-url "https://github.com/mvc-works/shell-page"}
