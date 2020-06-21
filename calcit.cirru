@@ -558,6 +558,28 @@
                     :id |4dxq9q0VBP
                   |D $ {} (:type :leaf) (:by |UI0sFmATo) (:at 1592739851731) (:text |->>) (:id |SOCDpZ0qD)
                   |L $ {} (:type :leaf) (:by |UI0sFmATo) (:at 1592739852489) (:text |xs) (:id |O_xBbZz1Z)
+                  |j $ {} (:type :expr) (:by |UI0sFmATo) (:at 1592742155843)
+                    :data $ {}
+                      |T $ {} (:type :leaf) (:by |UI0sFmATo) (:at 1592742157322) (:text |filter) (:id |tHjLws6CBfleaf)
+                      |j $ {} (:type :expr) (:by |UI0sFmATo) (:at 1592742198008)
+                        :data $ {}
+                          |T $ {} (:type :expr) (:by |UI0sFmATo) (:at 1592742202045)
+                            :data $ {}
+                              |T $ {} (:type :expr) (:by |UI0sFmATo) (:at 1592742160603)
+                                :data $ {}
+                                  |T $ {} (:type :leaf) (:by |UI0sFmATo) (:at 1592742161780) (:text |[]) (:id |9SEGvTuVh4)
+                                  |j $ {} (:type :leaf) (:by |UI0sFmATo) (:at 1592742162652) (:text |idx) (:id |mRF0qvvpJ)
+                                  |r $ {} (:type :leaf) (:by |UI0sFmATo) (:at 1592742163090) (:text |x) (:id |bVJ3IyZOrX)
+                                :id |DqUTUQNj8
+                            :id |1BBCMUBetW
+                          |D $ {} (:type :leaf) (:by |UI0sFmATo) (:at 1592742198982) (:text |fn) (:id |k5DqVvK8y)
+                          |j $ {} (:type :expr) (:by |UI0sFmATo) (:at 1592742203414)
+                            :data $ {}
+                              |T $ {} (:type :leaf) (:by |UI0sFmATo) (:at 1592742203414) (:text |some?) (:id |NYUEDBPrGI)
+                              |j $ {} (:type :leaf) (:by |UI0sFmATo) (:at 1592742203414) (:text |x) (:id |k6X8v3vIK9)
+                            :id |ybSuA2c5TK
+                        :id |DL45kVT4Lf
+                    :id |tHjLws6CBf
                 :id |Su2rDSkFv6
             :id |H7QL3MR75Z
         :proc $ {} (:type :expr) (:id |rJOZszpkhj-) (:by nil) (:at 1506700563333) (:data $ {})

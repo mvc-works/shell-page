@@ -6,7 +6,8 @@
             [respo.render.html :refer [make-string]]
             ["fs" :as fs]))
 
-(defn get-indexed [xs] (->> xs (map-indexed (fn [idx x] [idx x]))))
+(defn get-indexed [xs]
+  (->> xs (map-indexed (fn [idx x] [idx x])) (filter (fn [[idx x]] (some? x)))))
 
 (defn make-page [html-content resources]
   (assert (string? html-content) "1st argument should be string")
