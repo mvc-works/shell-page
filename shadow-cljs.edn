@@ -2,6 +2,7 @@
   :source-paths ["src/"]
   :dependencies [
     [respo "0.12.2"]
+    [mvc-works/lilac "0.1.6"]
   ]
   :dev-http {7000 "target/"}
   :builds {

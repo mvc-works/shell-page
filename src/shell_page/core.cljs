@@ -4,14 +4,29 @@
              :refer
              [html <> head title script style meta' div link body style list->])
             [respo.render.html :refer [make-string]]
+            [lilac.core :refer [dev-check record+ string+ vector+ optional+ or+ keyword+]]
             ["fs" :as fs]))
 
 (defn get-indexed [xs]
   (->> xs (map-indexed (fn [idx x] [idx x])) (filter (fn [[idx x]] (some? x)))))
 
+(def lilac-resource
+  (record+
+   {:title (string+),
+    :icon (string+),
+    :ssr (optional+ (string+)),
+    :styles (vector+ (string+)),
+    :inline-styles (vector+ (string+)),
+    :scripts (vector+ (or+ [(string+) (record+ {:type (keyword+), :src (string+)})])),
+    :inner-html (string+),
+    :append-html (string+),
+    :manifest (string+)}
+   {:all-optional? true}))
+
 (defn make-page [html-content resources]
   (assert (string? html-content) "1st argument should be string")
   (assert (map? resources) "2nd argument should be hashmap")
+  (dev-check resources lilac-resource)
   (make-string
    (html
     {}
