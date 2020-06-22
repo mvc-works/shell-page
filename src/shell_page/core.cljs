@@ -4,7 +4,9 @@
              :refer
              [html <> head title script style meta' div link body style list->])
             [respo.render.html :refer [make-string]]
-            [lilac.core :refer [dev-check record+ string+ vector+ optional+ or+ keyword+]]
+            [lilac.core
+             :refer
+             [dev-check record+ string+ vector+ optional+ or+ keyword+ boolean+]]
             ["fs" :as fs]))
 
 (defn get-indexed [xs]
@@ -14,14 +16,19 @@
   (record+
    {:title (string+),
     :icon (string+),
-    :ssr (optional+ (string+)),
+    :ssr (string+),
     :styles (vector+ (string+)),
     :inline-styles (vector+ (string+)),
-    :scripts (vector+ (or+ [(string+) (record+ {:type (keyword+), :src (string+)})])),
-    :inner-html (string+),
+    :scripts (vector+
+              (or+
+               [(string+)
+                (record+
+                 {:type (keyword+), :src (string+), :defer? (boolean+)}
+                 {:exact-keys? true})])),
+    :inline-html (string+),
     :append-html (string+),
     :manifest (string+)}
-   {:all-optional? true}))
+   {:all-optional? true, :exact-keys? true}))
 
 (defn make-page [html-content resources]
   (assert (string? html-content) "1st argument should be string")
@@ -53,8 +60,12 @@
                (cond
                  (string? path) (script {:src path})
                  (and (map? path) (= :module (:type path)))
-                   (script {:type "module", :src (:src path)})
-                 (and (map? path) (= :script (:type path))) (script {:src (:src path)})
+                   (script
+                    {:type "module",
+                     :src (:src path),
+                     :defer (if (:defer? path) true false)})
+                 (and (map? path) (= :script (:type path)))
+                   (script {:src (:src path), :defer (if (:defer? path) true false)})
                  :else (println "[Shell Page]: unknown path" path))))))))
     (body
      {}
