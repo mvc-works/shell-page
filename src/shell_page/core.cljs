@@ -64,7 +64,7 @@
                     {:type "module",
                      :src (:src path),
                      :defer (if (:defer? path) true false)})
-                 (and (map? path) (= :script (:type path)))
+                 (and (map? path) (or (= :script (:type path)) (nil? (:type path))))
                    (script {:src (:src path), :defer (if (:defer? path) true false)})
                  :else (println "[Shell Page]: unknown path" path))))))))
     (body
