@@ -28,7 +28,7 @@
     :inline-html (string+),
     :append-html (string+),
     :manifest (string+)}
-   {:all-optional? true, :exact-keys? true}))
+   {:all-optional? true, :check-keys? true}))
 
 (defn make-page [html-content resources]
   (assert (string? html-content) "1st argument should be string")
