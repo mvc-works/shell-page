@@ -23,8 +23,9 @@
               (or+
                [(string+)
                 (record+
-                 {:type (keyword+), :src (string+), :defer? (boolean+)}
-                 {:exact-keys? true})])),
+                 {:type (optional+ (keyword+)), :src (string+), :defer? (boolean+)}
+                 {:check-keys? true})])
+              {:allow-seq? true}),
     :inline-html (string+),
     :append-html (string+),
     :manifest (string+)}
