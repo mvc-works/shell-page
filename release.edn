@@ -1,4 +1,4 @@
-{:version "0.1.14",
+{:version "0.1.15-a1",
  :group-id "mvc-works",
  :artifact-id "shell-page",
  :skip-tag true,

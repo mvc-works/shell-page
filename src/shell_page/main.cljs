@@ -11,7 +11,10 @@
      :ssr "respo-ssr",
      :styles ["/main.css"],
      :inline-styles [".app{color:#aaa;}"],
-     :scripts ["/main.js" {:type :module, :src "main.js", :defer? false}],
+     :scripts (list
+               "/main.js"
+               {:type :module, :src "main.js", :defer? false}
+               {:src "client.js", :defer? true}),
      :inline-html "<script>console.log('nothing')</script>",
      :append-html "<script>console.log('appended');</script>",
      :manifest "manifest.json"})))
