@@ -9,7 +9,7 @@ Shell Page (generator)
 ### Usage
 
 ```edn
-[mvc-works/shell-page "0.1.11-a1"]
+[mvc-works/shell-page "0.1.15"]
 ```
 
 ```clojure
